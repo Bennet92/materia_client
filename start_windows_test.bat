@@ -1,8 +1,8 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set LOGINSERVER=login.materia-rpg.games
-set GAMESERVER=game.materia-rpg.games
+set LOGINSERVER=testlogin.materia-rpg.games
+set GAMESERVER=testgame.materia-rpg.games
 set APP=otclient_dx.exe
 
 start  cloudflared-windows-amd64.exe access tcp --hostname %LOGINSERVER% --url tcp://localhost:7171 --log-level=debug
